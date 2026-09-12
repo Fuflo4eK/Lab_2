@@ -1,1 +1,13 @@
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_CTYPE, "RUS");
+    int a, x, i, total;
+    a = 1000;
+    x = a / 4;
+    i = (a - x) / 3;
+    total = i * 52;
+    printf("Сумма накопленная за год: %d", total);
+    return 0;
+}
